@@ -1,13 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document1</title>
+    <style>
+        /* Clase con los colores que cambiara */
+        .black {
+        background-color: black;
+        color: white;
+        }
+
+        /* Colores que tendra por default */
+        body {
+        background-color: white;
+        color: black;
+        }
+    </style>
+    <script src="/scripts/snippet-javascript-console.min.js?v=1"></script>
 </head>
 <body>
+    <html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<body>
     <h1> Primer archivo con GIT</h1>
-   
+ 
+  <br/>
+  <br/>
+  <input type="button" id="btnInvertirColores" value="Invertir colores" />
+</body>
+  </html>
+<script type="text/javascript">
+        // Evento click del boton
+        $("#btnInvertirColores").click(function(){
+        // Asigna o desasigna la clase black
+        $("body").toggleClass('black');
+        });
+    </script>
 </body>
 </html>
